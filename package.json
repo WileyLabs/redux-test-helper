@@ -1,5 +1,5 @@
 {
-  "name": "redux-test-helper",
+  "name": "redux-tester-helper",
   "version": "0.1.0",
   "description": "simple test utils for testing redux apps",
   "main": "index.js",
