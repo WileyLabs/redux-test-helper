@@ -1,7 +1,7 @@
 import reducer from './src/Reducer';
-import selectors from './src/Selector';
+import selector from './src/Selector';
 
 export {
     reducer,
-    selectors
+    selector
 };
