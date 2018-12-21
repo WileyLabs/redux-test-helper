@@ -1,12 +1,12 @@
 import deepFreeze from 'deep-freeze-es6';
 
-export default function(selector) {
+export default function(selector, ...params) {
   return {
     fromState: (state) => {
       let result;
       try {
         deepFreeze(state);
-        result = selector(state);
+        result = selector(state, ...params);
       } catch (e) {
         if (e.message.includes('object is not extensible')) {
           throw 'State has been modified by Selector! This is a bug and should be fixed immediately!';
